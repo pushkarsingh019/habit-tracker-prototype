@@ -3,10 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import ArchiveScreen from "./screens/ArchiveScreen";
 import HabitScreen from "./screens/HabitScreen";
+import Navbar from "./compomnents/Navbar";
 
 const App = () => {
     return (
         <BrowserRouter>
+            <Navbar />
             <Routes>
                 <Route path="/" element={<HomeScreen />} />
                 <Route path="/archive" element={<ArchiveScreen />} />
